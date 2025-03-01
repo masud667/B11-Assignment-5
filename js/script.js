@@ -5,9 +5,10 @@ document.getElementById('middleBox').addEventListener("click", function(){
 
 
 const buttons = document.querySelectorAll(".completedBtn");
+let newAlert = 0;
 for(const button of buttons ){
     button.addEventListener('click', function(){
-        alert("Click OK");
+        alert("Board Update Successfully");
 
         // checkbox counting 
         const count1 = parseInt(document.getElementById('count1').innerText);
@@ -20,6 +21,8 @@ for(const button of buttons ){
 
 
         // current date and time 
+
+
         const time = new Date();
         const currentTime= time.toLocaleTimeString('en-US', 
           {
@@ -28,12 +31,7 @@ for(const button of buttons ){
               second : 'numeric',
               hour12 : true 
           })
-        const currentDate= time.toLocaleTimeString('en-US', 
-          {
-              day: 'numeric',
-              month : 'long',
-              year : 'numeric'
-          })
+      
         // History Container
         const historyContainer = document.getElementById('historyContainer');
          const card = this.closest('.card-body');
@@ -45,15 +43,28 @@ for(const button of buttons ){
        history.style.backgroundColor = '#F4F7FF'
        history.style.padding = '16px'
        historyContainer.appendChild(history);
-    
- 
 
-  
-
+    newAlert++;
+    if (newAlert === buttons.length) {
+        alert('Congrats!! You have compeleted all the current task')
+    }
     })
 }
 
-document.getElementById('clearHistory').addEventListener('click', function(){
+// clean history 
+    document.getElementById('clearHistory').addEventListener('click', function(){
     document.getElementById('historyContainer').innerHTML = "";
 })
 
+// currentDate
+    const timeNow = new Date();
+    const currentDate= timeNow.toLocaleDateString('en-US', 
+    {
+        day: 'numeric',
+        month : 'long',
+        year : 'numeric'
+    })
+    const day = timeNow.toLocaleDateString('en-US',{ weekday:"short"} );
+
+     document.getElementById('weekenDay').innerText = day;
+     document.getElementById('currentDateId').innerText = currentDate;
