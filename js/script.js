@@ -17,7 +17,20 @@ for(const button of buttons ){
 
         // disable button 
         this.disabled = true;
-        
+
+        // History Container
+        const historyContainer = document.getElementById('historyContainer');
+         const card = this.closest('.card-body');
+         const title = card.querySelector(".card-title").innerText;
+       const history = document.createElement('p');
+       history.innerHTML= `
+        You Have Compeleted the ${title}  at 
+       `
+       history.style.backgroundColor = '#F4F7FF'
+       history.style.padding = '16px'
+       historyContainer.appendChild(history);
+    
+    
     })
 }
 
