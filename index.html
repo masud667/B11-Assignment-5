@@ -12,13 +12,180 @@
 
 
 </head>
-<body>
-   <div class="container">
-    <header class="">
-       
+<body class="bg-red-300">
+   <div class="container mx-auto ">
+    <header class="pt-4">
+        <div class="navbar flex justify-between  shadow-sm rounded-xl p-4 bg-white">
+            <div class=" ">
+              <a class="flex text-2xl items-center space-x-1">
+                <img class="w-8" src="./assets/logo.png" alt=""> Dev<strong>Board</strong>
+            </a>
+            </div>
+            <div class="flex gap-4 ">
+                <div class="px-4 py-2 rounded-3xl flex gap-2 items-center bg-[#F4F7FF]">
+                    <img class="" src="./assets/checkbox.png" alt=""> <p class="text-2xl font-bold">10</p> 
+                </div>
+                <div class="bg-[#F4F7FF] px-4 py-2 rounded-3xl">
+                    <img class="w-8" src="./assets/theme-btn.png" alt=""> 
+                </div>
+            </div>
+          </div>
     </header>
-    <main>
+    <main class=" py-4">
+        <div class=" grid md:grid-cols-4 grid-cols-1 gap-5">
+            <!-- main contain ber  -->
+            <div class="bg-white md:col-span-3 rounded-xl">
+              <!-- contain header part -->
+                   <div class="  rounded-xl grid grid-cols-1 md:grid-cols-4 gap-4 p-4"  >
 
+                    <div class="rounded-xl col-span-1 bg-[#F4F7FF] flex justify-center items-center gap-4 text-xl py-4">
+                        <div  class="bg-white rounded-3xl p-3">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                        <p class="font-bold text-2xl">05</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-2 bg-[#6188f4] rounded-xl flex pl-12 items-center gap-4 text-xl text-white py-2">
+                        <div>
+                            <img src="./assets/board.png" alt="">
+                        </div>
+                        <p>Discover Something <br> New Today!</p>
+                    </div>
+
+                    <div class="rounded-xl col-span-1 bg-[#F4F7FF] flex justify-center items-center gap-4 text-xl py-4">
+                        <div class="bg-white rounded-3xl p-3">
+                            <img class="" src="./assets/calender.png" alt="">
+                        </div>
+                       <div>
+                        <p>Wed,</p>
+                        <p class="font-bold text-2xl" >12/12/2025</p>
+                       </div>
+                    </div>
+                   </div>
+
+                   <hr class=" text-slate-300 mt-2">
+
+
+                   <!-- contain boxes part  -->
+                   <div class=" p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
+
+                    <!-- box 1 -->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >ShopEase</p>
+                          <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Debug using Chrome DevTools, check for overlapping</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- box2-->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >CloudSync</p>
+                          <h2 class="card-title text-xl">Add Dark Mode</h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Store the user's preference in localStorage, update CSS...</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- box3 -->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >SwiftPay</p>
+                          <h2 class="card-title text-xl">Optimize  Home page </h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Debug using Chrome DevTools, check for overlapping</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- box 4-->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >Meta</p>
+                          <h2 class="card-title text-xl">Add new emoji 🤲</h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Debug using Chrome DevTools, check for overlapping</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- box 5 -->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >Google LLC</p>
+                          <h2 class="card-title text-xl">Integrate OpenAI API </h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Debug using Chrome DevTools, check for overlapping</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- box 6 -->
+                    <div class="card bg-[#F4F7FF]">
+                        <div class="card-body">
+                            <p class="bg-white w-20 text-center  rounded-lg p-1" >Glassdoar</p>
+                          <h2 class="card-title text-xl">Improve Job searching </h2>
+                          <p class="bg-white p-3 rounded-xl text-slate-400 text-sm mb-2">Debug using Chrome DevTools, check for overlapping</p>
+                          
+                          <div class="card-actions flex justify-between items-center border-t-2 border-dashed border-[#becdf6] pt-4">
+                            <div class="text-sm">
+                                <p class="text-slate-500" >Deadline</p>
+                                <p class=" font-bold ">12 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                   </div>
+               
+            </div>
+
+            <!-- sideber  -->
+            <div class="bg-white col-span-1 row-auto rounded-xl shadow-sm ">
+                <!-- sidebar static content  -->
+                <div class="p-6 text-center border-b border-slate-200">
+                    <div class="flex gap-2 justify-center items-center ">
+                        <img src="./assets/activity.png" alt=""> <p class="text-xl">Activity Log</p>
+                    </div>
+                    <button class="btn btn-primary mt-4 text-white  "> Clear history</button>
+                </div>
+
+            </div>
+        </div>
     </main>
    </div>
 
