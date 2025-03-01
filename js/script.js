@@ -53,5 +53,7 @@ for(const button of buttons ){
     })
 }
 
-
+document.getElementById('clearHistory').addEventListener('click', function(){
+    document.getElementById('historyContainer').innerHTML = "";
+})
 
