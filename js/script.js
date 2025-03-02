@@ -1,9 +1,11 @@
+
+// swiping to blog page 
 document.getElementById('middleBox').addEventListener("click", function(){
     window.location.href = 'blogs.html'
 })
 
-
-
+document.removeChild
+// compeleted button clicking function
 const buttons = document.querySelectorAll(".completedBtn");
 let newAlert = 0;
 for(const button of buttons ){
@@ -19,10 +21,7 @@ for(const button of buttons ){
         // disable button 
         this.disabled = true;
 
-
-        // current date and time 
-
-
+        // current date and time
         const time = new Date();
         const currentTime= time.toLocaleTimeString('en-US', 
           {
@@ -31,7 +30,7 @@ for(const button of buttons ){
               second : 'numeric',
               hour12 : true 
           })
-      
+
         // History Container
         const historyContainer = document.getElementById('historyContainer');
          const card = this.closest('.card-body');
@@ -43,7 +42,7 @@ for(const button of buttons ){
        history.style.backgroundColor = '#F4F7FF'
        history.style.padding = '16px'
        historyContainer.appendChild(history);
-
+        //   extra alert showing condition 
         newAlert++;
         if (newAlert === buttons.length) {
         alert('Congrats!! You have compeleted all the current task')
@@ -69,15 +68,12 @@ for(const button of buttons ){
      document.getElementById('weekenDay').innerText = day;
      document.getElementById('currentDateId').innerText = currentDate;
 
-
+        // random backgraound   
      document.getElementById('randomBtn').addEventListener('click', function(){
-       
          const letters = "0123456789ABCDEF";
         let color = "#";
-       
         for(let i = 0; i < 6; i++){
-            color += letters[Math.floor(Math.random() * 16)];
-           
+            color += letters[Math.floor(Math.random() * 16)]; 
         }
         document.body.style.backgroundColor = color;
      })
